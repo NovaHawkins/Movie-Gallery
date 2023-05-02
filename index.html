@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Movie Gallery Thingy</title>
+
+<style>
+
+    body{background:black}
+
+    h1{
+        color:white;
+        background-color:rgb(55, 55, 55);
+        border:2px solid white;
+        padding:15px;
+
+    }
+
+
+    #movieSelect{
+        display:flex;
+    }
+
+    @media screen and (max-width: 800px) {
+  .img {
+    width: 100vw;
+  }
+}
+
+
+    .img{
+        width:750px;
+        height:80vh;
+        z-index:1;
+    }
+
+    .info{
+
+        color:white;
+        background-color:rgba(150, 150, 150, 0.9);
+        z-index:5;
+        margin-top:-60px;
+        width:250px;
+    }
+
+</style>
+
+</head>
+<body>
+    <div id="content">
+        <h1 id="head">Browse Movies</h1>
+        <div id="movieSelect">
+            <div id="Arcade">
+                <img class="img" src="the-arcade.jpg">
+                <p class="info">A man is locked in an arcade overnight. But little does he know what's in store for him.</p>
+            </div>
+            <div id="EqualMinds">
+                <img class="img" src="equal-minds.jpg">
+                <p class="info">A battle between 2 evenly gifted students leads down a horrific road.</p>
+            </div>
+            <div id="TheLarper">
+                <img class="img" src="the-larper.jpg">
+                <p class="info">You thought you were safe, but this man takes larping way too far.</p>
+            </div>
+            <div id="Prepared">
+                <img class="img" src="prepared.jpg">
+                <p class="info">He came, he saw, he made a big mistake. She was ready for him.</p>
+            </div>
+            <div id="Traffic">
+                <img class="img" src="traffic.jpg">
+                <p class="info">Watch how the world changes when New York has one of the worst traffic jams in history.</p>
+            </div>
+            <div id="Rudolph">
+                <img class="img" src="rudolph.jpg">
+                <p class="info">A story of a puppy who saves Christmas.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
